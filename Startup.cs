@@ -12,9 +12,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 using Microsoft.EntityFrameworkCore;
-using Bismillah1.Models;
+using NetTestProject.Models;
 
-namespace Bismillah1
+namespace NetTestProject
 {
     public class Startup
     {

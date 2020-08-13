@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Bismillah1.Models;
+using NetTestProject.Models;
 
-namespace Bismillah1.Controllers
+namespace NetTestProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
