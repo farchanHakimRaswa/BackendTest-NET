@@ -28,3 +28,7 @@ DOCUMENTATION
 * POSTMAN LINK : https://documenter.getpostman.com/view/6485129/T1LPCRyk?version=latest
 
 
+START PROJECT
+-----------
+* IIS Express : http://localhost:61442 aND https://localhost:44356
+* Development Server :  http://localhost:5000 aND https://localhost:5001
