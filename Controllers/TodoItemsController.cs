@@ -27,7 +27,7 @@ namespace NetTestProject.Controllers
             return await _context.TodoItems.ToListAsync();
         }
 
-        // GET: api/TodoItems/5 : Get spesific data by id unique (primary key)
+        // GET: api/TodoItems/5 : Get Specific data by id unique (primary key)
         [HttpGet("byId/{id}")]
         public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
         {
@@ -41,14 +41,14 @@ namespace NetTestProject.Controllers
             return todoItem;
         }
 
-        // GET : api/TodoItems/byDate/2020-08-20/2020-08-21 : Get all data with spesific range date (start date and end date)
+        // GET : api/TodoItems/byDate/2020-08-20/2020-08-21 : Get all data with Specific range date (start date and end date)
         [HttpGet("byDate/{startDate}/{endDate}")]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItemByDate(DateTime startDate, DateTime endDate)
         {
            return await _context.TodoItems.Where(p => p.FinishDate >= startDate && p.FinishDate <= endDate).ToListAsync();
         }
 
-        // GET : api/TodoItems/byStatus/false : Get all data with spesific status (true or false)
+        // GET : api/TodoItems/byStatus/false : Get all data with Specific status (true or false)
         [HttpGet("byStatus/{status}")]
         public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItemByStatus(bool status)
         {
@@ -57,7 +57,7 @@ namespace NetTestProject.Controllers
 
 
         // PUT: api/TodoItems/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // To protect from overposting attacks, enable the Specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
@@ -88,7 +88,7 @@ namespace NetTestProject.Controllers
             return new JsonResult(todoItem);
         }
 
-        // PATCH: api/TodoItems/setComplate/1/true : is used to set status complate (true or false) of spesific todo id
+        // PATCH: api/TodoItems/setComplate/1/true : is used to set status complate (true or false) of Specific todo id
         [HttpPatch("setComplate/{id}/{percent}")]
         public async Task<ActionResult<TodoItem>> SetisComplate(bool percent, long id)
         {
@@ -104,7 +104,7 @@ namespace NetTestProject.Controllers
         }
 
 
-        // PATCH: api/TodoItems/UpdatePercent/1/30 : is used to set percent value of spesific todo id
+        // PATCH: api/TodoItems/UpdatePercent/1/30 : is used to set percent value of Specific todo id
         [HttpPatch("UpdatePercent/{id}/{percent}")]
         public async Task<ActionResult<TodoItem>> SetPercentComplate(long percent, long id)
         {
@@ -120,7 +120,7 @@ namespace NetTestProject.Controllers
         }
 
         // POST: api/TodoItems
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // To protect from overposting attacks, enable the Specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
         public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
