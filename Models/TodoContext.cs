@@ -16,6 +16,5 @@ namespace NetTestProject.Models
 
         public DbSet<TodoItem> TodoItems { get; set; }
 
-        public DbSet<NetTestProject.Models.SosialData> SosialData { get; set; }
     }
 }
